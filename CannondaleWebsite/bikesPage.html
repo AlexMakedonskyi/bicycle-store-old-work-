@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bikesPage.css">
+	<title>Bikes</title>
+</head>
+<body>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header-container">
+			<a href="/mainPage.html">HOME</a>
+			<div class="search-bar">
+				<input type="search" id="searchbar"placeholder="Search">
+				<label for="searchbar"><img class="search-icon" src="/source-img/bikes/icons/3028692271535694869.svg" alt=""></label>
+			</div>
+			<a class="cart-link" href="/cartPage.html">	
+				<div class="cart-container">
+					<p class="cart-container-label">Cart</p>
+						<div class="cart-icon-ground">
+								<input type="hidden" name="cart" id="cart">	<div class="cart"></div>
+						</div>
+				</div>
+			</a>
+		</header>
+
+		<div class="brline"></div>
+
+		<div class="items-shop-container">
+			<div class="filter-container">
+				<div class="price-filter">
+					<span>Price</span>
+					<input type="range" id="range" min="0" max="15000">
+				</div>
+				<div class="filter-value">
+					<span class="price-value-range">10000</span>
+					<button class="apply-filter">OK</button>
+				</div>
+			</div>
+
+			<div class="products-container">
+				<!-- <div class="product-container">
+					<a href="" class="products-container product"></a>
+					<li>1Gravel_Topstone_Carbon1L</li> 
+					<span>Fast and modern bike to satisfy all needs</span>
+				</div>
+				<div class="product-container">
+					<a href="" class="products-container product"></a>
+					<li>1Gravel_Topstone_Carbon1L</li> 
+					<span>Fast and modern bike to satisfy all needs</span>
+				</div>
+				<div class="product-container">
+					<a href="" class="products-container product"></a>
+					<li>2Gravel_Topstone_Carbon1R</li> 
+					<span>Fast and modern bike to satisfy all needs</span>
+				</div>
+				<div class="product-container">
+					<a href="" class="products-container product"></a>
+					<li>3Gravel_Topstone_Carbon2L</li> 
+					<span>Fast and modern bike to satisfy all needs</span>
+				</div>
+				<div class="product-container">
+					<a href="" class="products-container product"></a>
+					<li>5Gravel_Topstone_Carbon3L</li> 
+					<span>Fast and modern bike to satisfy all needs</span>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="brline"></div>
+
+		<div class="category-footer">
+			<div class="sugested-bikes">
+				<div class="sugested-bikes-type">
+					<div class="sugested-bikes-gravel-txt">Gravel Bikes</div>
+					<div class="sugested-bikes-img-gravel zoom"></div>
+				</div>
+				<div class="sugested-bikes-type">
+					<div class="sugested-bikes-mtb-txt">Mountain Bikes</div>
+					<div class="sugested-bikes-img-mtb zoom"></div>
+				</div>
+				<div class="sugested-bikes-type">
+					<div class="sugested-bikes-road-txt">Road Bikes</div>
+					<div class="sugested-bikes-img-road zoom"></div>
+				</div>
+			</div>
+		</div>
+		<a class="cart-link" href="/cartPage.html">	
+			<div class="cart-container">
+				<p class="cart-container-label">Cart</p>
+					<div class="cart-icon-ground">
+							<input type="hidden" name="cart" id="cart">	<div class="cart"></div>
+					</div>
+			</div>
+	</body>
+	<script src="/mainJs.js"></script>
+	<script src="/mainPage.js"></script>
+	<script src="bikesPage.js"></script>
+</body>
+</html>

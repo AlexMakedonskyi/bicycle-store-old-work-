@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/searchtest.css">
+	<title>Document</title>
+</head>
+<body>
+	<input id="search" type="search" placeholder="type here" autofocus="true">
+	<ul class="list">
+		<li>flower rose</li>
+		<li>floor</li>
+		<li>cat</li>
+	</ul>
+
+	<script>
+		
+		document.getElementById("search").oninput = function(){
+			// searching items function
+			let input = document.getElementById("search");
+			let ul = document.getElementsByClassName("list");
+			let checklist = document.getElementsByTagName("li");
+			for (let i = 0; i <= checklist.length; i++){
+				for (let j= 0; j <= checklist[i].innerText.length; j++){
+					if(checklist[i].innerText.toUpperCase().includes(input.value.toUpperCase())){
+						checklist[i].style.display = ''
+					} else {
+						checklist[i].style.display = 'none'
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
